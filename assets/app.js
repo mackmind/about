@@ -58,27 +58,27 @@
     'hero.eyebrow': 'Gdańsk',
     'hero.title': 'Utrzymuję ciągłość produkcji map lotniczych.',
     'hero.lead':
-      'Dziesięć lat w lotniczych technologiach nawigacyjnych: wsparcie pierwszej i drugiej linii dla krytycznych narzędzi CAD, analiza przyczyn źródłowych, wymagania i testy oraz automatyzacja w PowerShellu i Pythonie — coraz częściej z agentami AI.',
+      'Dziesięć lat w lotniczych technologiach nawigacyjnych: wsparcie pierwszej i drugiej linii dla krytycznych narzędzi CAD, analiza przyczyn źródłowych, wymagania i testy oraz automatyzacja w PowerShellu i Pythonie —\u00A0coraz częściej z agentami AI.',
     'hero.note':
-      'Szukam roli w obszarze wsparcia produkcji, operacji technicznych i utrzymania narzędzi — i nie tylko.',
+      'Szukam roli w obszarze wsparcia produkcji, operacji technicznych i utrzymania narzędzi —\u00A0i nie tylko.',
     'hero.cv': 'Pobierz CV (PDF)',
-    'hero.email': 'E-mail',
+    'hero.email': 'E\u2011mail',
     'strengths.title': 'Mocne strony',
-    'strengths.intro': 'Trzy rzeczy, które robię dobrze — z dowodami, nie przymiotnikami.',
+    'strengths.intro': 'Trzy rzeczy, które robię dobrze —\u00A0z dowodami, nie przymiotnikami.',
     'strength.1.title': 'Wsparcie całego łańcucha narzędzi',
     'strength.1.body':
-      'Awaria plotowania może wynikać z pliku projektu, konfiguracji, licencji, usługi albo ścieżki dostępu. Ustalam, z którego — naprawiam to, co należy do mnie, a resztę eskaluję z dowodami.',
+      'Awaria plotowania może wynikać z pliku projektu, konfiguracji, licencji, usługi albo ścieżki dostępu. Ustalam, z którego —\u00A0naprawiam to, co należy do mnie, a resztę eskaluję z dowodami.',
     'strength.1.meta': 'MicroStation/J V7 · plotowanie · pulpity wirtualne',
     'strength.2.title': 'Utrzymanie, nie pisanie od zera',
     'strength.2.body':
-      'Utrzymuję narzędzia zespołu w ruchu: skrypty batch i PowerShell, launchery oraz narzędzie do mapowania dysków. Przeważnie rozwijam i naprawiam istniejący kod — coraz częściej z agentami AI.',
+      'Utrzymuję narzędzia zespołu w ruchu: skrypty batch i PowerShell, launchery oraz narzędzie do mapowania dysków. Przeważnie rozwijam i naprawiam istniejący kod —\u00A0coraz częściej z agentami AI.',
     'strength.2.meta': 'Utrzymanie · SME wsparcia',
     'strength.3.title': 'Wiedza, która procentuje',
     'strength.3.body':
-      'Notatki własne, rozwiązania zespołu i artykuły samoobsługowe dla użytkowników, utrzymywane na bieżąco — żeby ludzie, a teraz także agenci, znajdowali odpowiedź bez zgłoszenia.',
+      'Notatki własne, rozwiązania zespołu i artykuły samoobsługowe dla użytkowników, utrzymywane na bieżąco —\u00A0żeby ludzie, a teraz także agenci, znajdowali odpowiedź bez zgłoszenia.',
     'strength.3.meta': 'Baza wiedzy · samoobsługa · wdrożenia',
     'work.title': 'Wybrane prace',
-    'work.intro': 'Szeroki generalista — daleko od prawdziwego developera — ale nie uczulony na kod.',
+    'work.intro': 'Szeroki generalista —\u00A0daleko od prawdziwego developera —\u00A0ale nie uczulony na kod.',
     'work.1.title': 'Narzędzie do mapowania dysków',
     'work.1.role': 'Narzędzie produkcyjne · utrzymanie, SME wsparcia',
     'work.1.body':
@@ -91,10 +91,10 @@
       'W toku: narzędzie desktopowe do wizualnego porównywania dokumentów, przyjazne zarówno ludziom, jak i agentom AI.',
     'work.3.role': 'Indie Developer · 2026',
     'work.3.body':
-      'Udział w Meta Global AI Developer Hackathon 2026 — praca z agentami AI nad przypadkiem weryfikacji pomiarów.',
+      'Udział w Meta Global AI Developer Hackathon 2026 —\u00A0praca z agentami AI nad przypadkiem weryfikacji pomiarów.',
     'experience.title': 'Doświadczenie',
     'experience.intro': 'Najnowsze pierwsze.',
-    'exp.1.when': '2018 – 2026',
+    'exp.1.when': '2018\u00A0–\u00A02026',
     'exp.1.role': 'Analityk Systemów i Danych, a następnie Starszy specjalista ds. Product Operations',
     'exp.1.org': 'Boeing Poland oraz Jeppesen ForeFlight',
     'exp.1.b1.label': 'Wsparcie i analiza',
@@ -107,11 +107,11 @@
     'exp.1.b4.text': ': tworzenie skryptów (PowerShell, Batch, Python), launcherów i narzędzi samoobsługowych; modernizacja procesów łączenia zasobów sieciowych z wykorzystaniem agentów AI.',
     'exp.1.b5.label': 'Ciągłość działania i jakość',
     'exp.1.b5.text': ': opracowywanie obejść awaryjnych, reprezentowanie zespołu podczas audytów ISO 9001:2015, prowadzenie szkoleń wprowadzających i bazy wiedzy.',
-    'exp.2.when': '2014 – 2018',
+    'exp.2.when': '2014\u00A0–\u00A02018',
     'exp.2.role': 'Analityk Informacji Lotniczej',
     'exp.2.org': 'Jeppesen, a Boeing Company',
     'exp.2.body': 'Tworzenie, edycja i kontrola jakości map lotnisk i procedur podejść lotniczych.',
-    'exp.3.when': '2010 – 2014',
+    'exp.3.when': '2010\u00A0–\u00A02014',
     'exp.3.role': 'Wcześniejsze role',
     'exp.3.org': 'Gdańsk i Pilzno',
     'exp.3.b1': 'Tłumacz ustny języka angielskiego w Komendzie Wojewódzkiej Policji w Gdańsku',
@@ -126,7 +126,7 @@
     'edu.2.school': 'Politechnika Gdańska · 2009–2013',
     'edu.3.degree': 'BSc Zarządzanie inżynierskie',
     'edu.3.school': 'Politechnika Gdańska · 2011–2016',
-    'edu.4.degree': 'Studia podyplomowe Inżynieria Danych — Data Science',
+    'edu.4.degree': 'Studia podyplomowe Inżynieria Danych —\u00A0Data Science',
     'edu.4.school': 'Politechnika Gdańska · 2017–2018',
     'pub.label': 'Prace dyplomowe',
     'pub.1': 'Koncepcja modelu doskonalenia zarządzania multiprocesem gwarancyjnym pod względem zgodności formalnej i technicznej w sektorze motoryzacyjnym',
@@ -173,8 +173,8 @@
     'toolbox.ai.4.meta': 'Notatki, rozwiązania zespołu i artykuły samoobsługowe na bieżąco',
     'toolbox.training.label': 'Szkolenia i certyfikaty',
     'toolbox.training.1': 'Audytor wewnętrzny ISO 9001:2008/2015',
-    'toolbox.training.1.meta': 'PCC-CERT · 2016',
-    'toolbox.training.2': 'Audytor wewnętrzny ISO 27001 · 14001 · PN-N 18001',
+    'toolbox.training.1.meta': 'PCC\u2011CERT · 2016',
+    'toolbox.training.2': 'Audytor wewnętrzny ISO 27001 · 14001 · PN\u2011N\u00A018001',
     'toolbox.training.2.meta': 'MG Centrum, z warsztatem ISO 19011 · 2016',
     'toolbox.training.3': 'Certyfikat średniozaawansowany AutoCAD',
     'toolbox.training.3.meta': 'ATC Autodesk · 2012',
@@ -195,7 +195,7 @@
     'flow.4.title': 'Myślenie modelowe',
     'flow.4.meta': 'Coursera · University of Michigan',
     'flow.5.title': '101 Awiacji',
-    'flow.5.meta': 'Canvas.net · Embry-Riddle Aeronautical University',
+    'flow.5.meta': 'Canvas.net · Embry\u2011Riddle Aeronautical University',
     'flow.6.title': 'Crucial Conversations',
     'flow.6.meta': 'Jeppesen',
     'flow.7.title': 'Teoria gier',
@@ -203,19 +203,19 @@
     'flow.8.title': 'Grywalizacja',
     'flow.8.meta': 'Coursera · Wharton',
     'flow.9.title': 'Wprowadzenie do komunikacji satelitarnej',
-    'flow.9.meta': 'Coursera · Institut Mines-Télécom',
+    'flow.9.meta': 'Coursera · Institut Mines\u2011Télécom',
     'flow.10.title': 'Badania Układu Słonecznego',
     'flow.10.meta': 'Coursera · Caltech',
     'flow.11.title': 'Inteligencja emocjonalna (EQ)',
     'flow.11.meta': 'Net Akademia',
-    'flow.12.title': 'NLP — programowanie neurolingwistyczne',
+    'flow.12.title': 'NLP —\u00A0programowanie neurolingwistyczne',
     'flow.12.meta': 'Net Akademia',
     'flow.13.title': 'Szybkie czytanie i szybka nauka',
     'flow.13.meta': 'MG Centrum',
-    'wip.text': 'Prace w toku! Podnoszę poziom swojego profilu bez ustanku. Nie ma w planach stanu końcowego dla tej strony.',
+    'wip.text': 'Prace w toku! Bezustannie podnoszę poziom swojego profilu. Nie ma w planach stanu końcowego tej strony.',
     'contact.title': 'Kontakt',
-    'contact.intro': 'Najszybciej odpowiadam na e-mail.',
-    'contact.email': 'E-mail',
+    'contact.intro': 'Najszybciej odpowiadam na e\u2011mail.',
+    'contact.email': 'E\u2011mail',
     'contact.github': 'GitHub',
     'contact.linkedin': 'LinkedIn'
   };
@@ -223,7 +223,7 @@
   const enText = new Map();
   const enAria = new Map();
 
-  const normalize = (value) => value.replace(/\s+/g, ' ').trim();
+  const normalize = (value) => value.replace(/[\t\n\v\f\r ]+/g, ' ').trim();
 
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     enText.set(el.dataset.i18n, normalize(el.textContent));
