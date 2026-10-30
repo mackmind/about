@@ -196,6 +196,7 @@ a {
 }
 
 .interests {
+  max-width: 56ch;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
   font-size: 1.02rem;
@@ -362,9 +363,35 @@ a {
   transform: translateY(-1px);
 }
 
-.btn--primary {
-  color: var(--accent-ink);
-  background: var(--accent);
+.btn--c1 {
+  color: #fff;
+  background: #0b2a4a;
+  border-color: transparent;
+}
+
+.btn--c2 {
+  color: #fff;
+  background: #123f6d;
+  border-color: transparent;
+}
+
+.btn--c3 {
+  color: #fff;
+  background: #1a5a8a;
+  border-color: transparent;
+}
+
+.btn--c4 {
+  color: #fff;
+  background: #2472a4;
+  border-color: transparent;
+}
+
+.btn--c1:hover,
+.btn--c2:hover,
+.btn--c3:hover,
+.btn--c4:hover {
+  filter: brightness(1.12);
   border-color: transparent;
 }
 
@@ -388,6 +415,10 @@ a {
   color: var(--muted);
 }
 
+.section__head p.wide {
+  max-width: none;
+}
+
 .grid {
   display: grid;
   gap: 0.9rem;
@@ -396,10 +427,11 @@ a {
 
 .card {
   padding: 1.25rem 1.3rem;
-  background: var(--surface);
+  background: color-mix(in oklab, var(--surface) 78%, transparent);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   container-type: inline-size;
+  backdrop-filter: blur(10px);
 }
 
 .card h3 {
@@ -553,6 +585,7 @@ a {
 .timeline .plain {
   margin: 0.5rem 0 0;
   font-size: 0.94rem;
+  max-width: 74ch;
 }
 
 .subgrid {
@@ -588,11 +621,11 @@ a {
 }
 
 .table {
-  background: color-mix(in oklab, var(--surface) 58%, transparent);
+  background: color-mix(in oklab, var(--surface) 45%, transparent);
   border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(7px);
 }
 
 .table__head {
@@ -603,7 +636,7 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
-  background: color-mix(in oklab, var(--surface-2) 62%, transparent);
+  background: color-mix(in oklab, var(--surface-2) 52%, transparent);
   border-bottom: 1px solid var(--line);
 }
 
