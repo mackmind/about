@@ -268,6 +268,13 @@
       );
     }
 
+    const cvLink = document.getElementById('cv-link');
+    if (cvLink) {
+      const isPolish = currentLang === 'pl';
+      cvLink.setAttribute('href', isPolish ? 'assets/cv-pl.pdf' : 'assets/cv-en.pdf');
+      cvLink.setAttribute('download', isPolish ? 'CV-Maciej-Mindowicz-PL.pdf' : 'CV-Maciej-Mindowicz-EN.pdf');
+    }
+
     updateThemeLabel();
     updateMarqueeLabel();
 
