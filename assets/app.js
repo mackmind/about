@@ -543,6 +543,7 @@
     root.style.setProperty('--sky-b', formatColor(mixColor(from.bOk, to.bOk, t)));
     root.style.setProperty('--sky-angle', `${(180 - 18 * progress).toFixed(1)}deg`);
     root.style.setProperty('--pan', progress.toFixed(4));
+    root.style.setProperty('--wip-lag', `${(Math.min(window.scrollY, 220) * 0.7).toFixed(1)}px`);
   }
 
   if (bg) {

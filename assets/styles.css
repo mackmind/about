@@ -214,6 +214,8 @@ a {
   border-block: 1px solid var(--line);
   background: repeating-linear-gradient(-45deg, #b3954a 0 10px, #242424 10px 20px);
   opacity: 0.85;
+  transform: translateY(var(--wip-lag, 0px));
+  will-change: transform;
 }
 
 .wip__tape {
