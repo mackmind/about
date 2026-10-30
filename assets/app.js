@@ -77,8 +77,8 @@
     'strength.3.body':
       'Notatki własne, rozwiązania zespołu i artykuły samoobsługowe dla użytkowników, utrzymywane na bieżąco — żeby ludzie, a teraz także agenci, znajdowali odpowiedź bez zgłoszenia.',
     'strength.3.meta': 'Baza wiedzy · samoobsługa · wdrożenia',
-    'work.title': 'Poza pracą',
-    'work.intro': 'Szeroki generalista — daleko od fullstack developera — ale nie uczulony na kod.',
+    'work.title': 'Wybrane prace',
+    'work.intro': 'Szeroki generalista — daleko od prawdziwego developera — ale nie uczulony na kod.',
     'work.1.title': 'Narzędzie do mapowania dysków',
     'work.1.role': 'Narzędzie produkcyjne · utrzymanie, SME wsparcia',
     'work.1.body':

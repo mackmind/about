@@ -115,21 +115,21 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 300vh;
-  opacity: 0.55;
-  transform: translateY(calc(var(--pan, 0) * -200vh));
+  height: 260vh;
+  opacity: 0.45;
+  transform: translateY(calc(var(--pan, 0) * -160vh));
   will-change: transform;
 }
 
 :root[data-theme="dark"] .bg__panorama {
   filter: invert(1) sepia(0.22) saturate(0.85);
-  opacity: 0.5;
+  opacity: 0.42;
 }
 
 @media (prefers-color-scheme: dark) {
   :root[data-theme="auto"] .bg__panorama {
     filter: invert(1) sepia(0.22) saturate(0.85);
-    opacity: 0.5;
+    opacity: 0.42;
   }
 }
 
