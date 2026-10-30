@@ -261,8 +261,6 @@
 
     const langBtn = document.getElementById('lang-toggle');
     if (langBtn) {
-      const label = langBtn.querySelector('span');
-      if (label) label.textContent = currentLang === 'pl' ? 'EN' : 'PL';
       langBtn.setAttribute('aria-pressed', String(currentLang === 'pl'));
       langBtn.setAttribute(
         'aria-label',

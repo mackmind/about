@@ -382,6 +382,26 @@ a {
   border-color: color-mix(in oklab, var(--accent) 40%, var(--line));
 }
 
+.ctrl--flag {
+  padding: 0 0.45rem;
+}
+
+.ctrl--flag .flag {
+  display: none;
+  width: 22px;
+  height: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+html[lang="en"] .ctrl--flag .flag--pl {
+  display: block;
+}
+
+html[lang="pl"] .ctrl--flag .flag--en {
+  display: block;
+}
+
 .ctrl--icon {
   padding: 0;
 }
