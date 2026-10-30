@@ -78,7 +78,7 @@
       'Notatki własne, rozwiązania zespołu\u00A0i\u00A0artykuły samoobsługowe dla użytkowników, utrzymywane na bieżąco —\u00A0żeby ludzie, a\u00A0teraz także agenci, znajdowali odpowiedź bez zgłoszenia.',
     'strength.3.meta': 'Baza wiedzy · samoobsługa · wdrożenia',
     'work.title': 'Wybrane prace',
-    'work.intro': 'Szeroki generalista —\u00A0nie podający się za właściwego developera —\u00A0ale bez alergii na kod.',
+    'work.intro': 'Szeroki generalista —\u00A0nie podający się za developera —\u00A0ale bez alergii na kod.',
     'work.1.title': 'Narzędzie do mapowania dysków',
     'work.1.role': 'Narzędzie produkcyjne · utrzymanie, SME wsparcia',
     'work.1.body':
@@ -93,7 +93,7 @@
     'work.3.body':
       'Udział w\u00A0Meta Global AI Developer Hackathon 2026 —\u00A0integracja PicCompare z\u00A0MuseAI, rozwój funkcji pomiarowych agentów\u00A0i\u00A0autonomiczna weryfikacja wyników.',
     'experience.title': 'Doświadczenie',
-    'experience.intro': 'Najnowsze pierwsze.',
+    'experience.intro': 'Od najświeższego.',
     'exp.1.when': '2018\u00A0–\u00A02026',
     'exp.1.role': 'Analityk Systemów\u00A0i\u00A0Danych, a\u00A0następnie Starszy specjalista ds. Product Operations',
     'exp.1.org': 'Boeing Poland oraz Jeppesen ForeFlight',
