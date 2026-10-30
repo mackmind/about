@@ -60,11 +60,11 @@
     'hero.lead':
       'Dziesięć lat w\u00A0lotniczych technologiach nawigacyjnych: wsparcie pierwszej i\u00A0drugiej linii dla krytycznych narzędzi CAD, analiza przyczyn źródłowych, wymagania i\u00A0testy oraz automatyzacja w\u00A0PowerShellu i\u00A0Pythonie —\u00A0coraz częściej z\u00A0agentami AI.',
     'hero.note':
-      'Szukam roli w\u00A0obszarze wsparcia produkcji, operacji technicznych i\u00A0utrzymania narzędzi —\u00A0i nie tylko.',
+      'Szukam roli w\u00A0obszarze wsparcia produkcji, operacji technicznych i\u00A0utrzymania narzędzi —\u00A0i\u00A0nie tylko.',
     'hero.cv': 'Pobierz CV (PDF)',
     'hero.email': 'E\u2011mail',
     'strengths.title': 'Mocne strony',
-    'strengths.intro': 'Trzy rzeczy, które robię dobrze —\u00A0z dowodami, nie przymiotnikami.',
+    'strengths.intro': 'Trzy rzeczy, które robię dobrze —\u00A0z\u00A0dowodami, nie przymiotnikami.',
     'strength.1.title': 'Wsparcie całego łańcucha narzędzi',
     'strength.1.body':
       'Awaria plotowania może wynikać z\u00A0pliku projektu, konfiguracji, licencji, usługi albo ścieżki dostępu. Ustalam, z\u00A0którego —\u00A0naprawiam to, co należy do mnie, a\u00A0resztę eskaluję z\u00A0dowodami.',
@@ -82,13 +82,13 @@
     'work.1.title': 'Narzędzie do mapowania dysków',
     'work.1.role': 'Narzędzie produkcyjne · utrzymanie, SME wsparcia',
     'work.1.body':
-      'Pomocnicze narzędzie do mapowania dysków sieciowych używane przez zespoły produkcyjne. Jedna wersja działająca we wszystkich środowiskach, umożliwiająca szybkie przełączenie konfiguracji lub własny wybór. Eliminacja najczęstszych utrudnień w\u00A0tle: sprawdzenia połączenia, przyspieszone omijanie niedostępnych ścieżek, odświeżanie etykiet —\u00A0a w\u00A0razie komplikacji dla użytkownika: tooltipy, widoczny log, błędy systemowe wymienione na czytelne opisy z\u00A0instrukcjami.',
+      'Pomocnicze narzędzie do mapowania dysków sieciowych używane przez zespoły produkcyjne. Jedna wersja działająca we wszystkich środowiskach, umożliwiająca szybkie przełączenie konfiguracji lub własny wybór. Eliminacja najczęstszych utrudnień w\u00A0tle: sprawdzenia połączenia, przyspieszone omijanie niedostępnych ścieżek, odświeżanie etykiet —\u00A0a\u00A0w\u00A0razie komplikacji dla użytkownika: tooltipy, widoczny log, błędy systemowe wymienione na czytelne opisy z\u00A0instrukcjami.',
     'work.1.b1': 'Wersjonowane zmiany w\u00A0kodzie, planowanie wdrożeń i\u00A0wycofań',
     'work.1.b2': 'Instrukcje i\u00A0artykuły bazy wiedzy aktualizowane razem z\u00A0każdym wydaniem',
     'work.1.b3': 'Diagnostyka odróżniająca błąd narzędzia od problemu z\u00A0dostępem, usługą lub członkostwem w\u00A0grupie',
     'work.2.role': 'Niezależne narzędzie desktopowe · prywatne',
     'work.2.body':
-      'W toku: narzędzie desktopowe do wizualnego porównywania dokumentów, przyjazne zarówno ludziom, jak i\u00A0agentom AI.',
+      'W\u00A0toku: narzędzie desktopowe do wizualnego porównywania dokumentów, przyjazne zarówno ludziom, jak i\u00A0agentom AI.',
     'work.3.role': 'Indie Developer · 2026',
     'work.3.body':
       'Udział w\u00A0Meta Global AI Developer Hackathon 2026 —\u00A0integracja PicCompare z\u00A0MuseAI, rozwój funkcji pomiarowych agentów\u00A0i\u00A0autonomiczna weryfikacja wyników.',

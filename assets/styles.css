@@ -13,6 +13,10 @@
   --sky-angle: 180deg;
   --surface: #ffffff;
   --text-glow: 0 0 18px rgba(251, 251, 250, 0.92), 0 0 6px rgba(251, 251, 250, 0.72);
+  --tape-stripe: #b99c56;
+  --tape-gap: #8b8070;
+  --tape-chip: #5f574a;
+  --tape-ink: #f4ead2;
   --radius: 14px;
   --wrap: 68rem;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -37,6 +41,10 @@
   --sky-a: #06080e;
   --sky-b: #0a0f1c;
   --text-glow: 0 0 18px rgba(6, 8, 14, 0.9), 0 0 6px rgba(6, 8, 14, 0.7);
+  --tape-stripe: #b3954a;
+  --tape-gap: #242424;
+  --tape-chip: #242424;
+  --tape-ink: #d8c48f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +61,10 @@
     --sky-a: #06080e;
     --sky-b: #0a0f1c;
     --text-glow: 0 0 18px rgba(6, 8, 14, 0.9), 0 0 6px rgba(6, 8, 14, 0.7);
+    --tape-stripe: #b3954a;
+    --tape-gap: #242424;
+    --tape-chip: #242424;
+    --tape-ink: #d8c48f;
   }
 }
 
@@ -236,7 +248,7 @@ h3 {
 .wip {
   overflow: hidden;
   border-block: 1px solid var(--line);
-  background: repeating-linear-gradient(-45deg, #b3954a 0 10px, #242424 10px 20px);
+  background: repeating-linear-gradient(-45deg, var(--tape-stripe) 0 10px, var(--tape-gap) 10px 20px);
   opacity: 0.85;
   transform: translateY(var(--wip-lag, 0px));
   will-change: transform;
@@ -256,8 +268,8 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #d8c48f;
-  background: #242424;
+  color: var(--tape-ink);
+  background: var(--tape-chip);
   border-radius: 2px;
   white-space: nowrap;
 }
