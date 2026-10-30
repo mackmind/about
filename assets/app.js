@@ -82,7 +82,7 @@
     'work.1.title': 'Narzędzie do mapowania dysków',
     'work.1.role': 'Narzędzie produkcyjne · utrzymanie, SME wsparcia',
     'work.1.body':
-      'Pomocnik do mapowania dysków\u00A0używany przez zespoły produkujące mapy w\u00A0różnych biurach i\u00A0na pulpitach wirtualnych. Utrzymuję go: wariant standardowy i\u00A0awaryjny, wybór biura i\u00A0półkuli oraz instrukcje na wypadek braku wymaganego dysku.',
+      'Pomocnicze narzędzie do mapowania dysków sieciowych używane przez zespoły produkcyjne. Jedna wersja działająca we wszystkich środowiskach, umożliwiająca szybkie przełączenie konfiguracji lub własny wybór. Eliminacja najczęstszych utrudnień w\u00A0tle: sprawdzenia połączenia, przyspieszone omijanie niedostępnych ścieżek, odświeżanie etykiet —\u00A0a w\u00A0razie komplikacji dla użytkownika: tooltipy, widoczny log, błędy systemowe wymienione na czytelne opisy z\u00A0instrukcjami.',
     'work.1.b1': 'Wersjonowane zmiany w\u00A0kodzie, planowanie wdrożeń i\u00A0wycofań',
     'work.1.b2': 'Instrukcje i\u00A0artykuły bazy wiedzy aktualizowane razem z\u00A0każdym wydaniem',
     'work.1.b3': 'Diagnostyka odróżniająca błąd narzędzia od problemu z\u00A0dostępem, usługą lub członkostwem w\u00A0grupie',
