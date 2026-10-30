@@ -49,9 +49,11 @@
     'brand.role': 'Wsparcie produkcji',
     'nav.label': 'Nawigacja główna',
     'nav.strengths': 'Mocne strony',
-    'nav.work': 'Projekty',
     'nav.experience': 'Doświadczenie',
     'nav.toolbox': 'Narzędzia',
+    'nav.work': 'Projekty',
+    'nav.courses': 'Kursy',
+    'nav.hobbies': 'Hobby',
     'nav.contact': 'Kontakt',
     'hero.eyebrow': 'Gdańsk · Jeppesen ForeFlight',
     'hero.title': 'Utrzymuję ciągłość produkcji map lotniczych.',
@@ -76,7 +78,7 @@
       'Notatki własne, rozwiązania zespołu i artykuły samoobsługowe dla użytkowników, utrzymywane na bieżąco — żeby ludzie, a teraz także agenci, znajdowali odpowiedź bez zgłoszenia.',
     'strength.3.meta': 'Baza wiedzy · samoobsługa · wdrożenia',
     'work.title': 'Poza pracą',
-    'work.intro': 'Jedno narzędzie produkcyjne, które utrzymuję, i dwie rzeczy poza pracą.',
+    'work.intro': 'Szeroki generalista — daleko od fullstack developera — ale nie uczulony na kod.',
     'work.1.title': 'Narzędzie do mapowania dysków',
     'work.1.role': 'Narzędzie produkcyjne · utrzymanie, SME wsparcia',
     'work.1.body':
@@ -86,7 +88,7 @@
     'work.1.b3': 'Diagnostyka odróżniająca błąd narzędzia od problemu z dostępem, usługą lub członkostwem w grupie',
     'work.2.role': 'Niezależne narzędzie desktopowe · prywatne',
     'work.2.body':
-      'Osobiste narzędzie desktopowe, które utrzymuję po godzinach. Szczegóły pozostają prywatne, więc strona tylko o nim wspomina.',
+      'W toku: narzędzie desktopowe do wizualnego porównywania dokumentów, przyjazne zarówno ludziom, jak i agentom AI.',
     'work.3.role': 'Indie Developer · 2026',
     'work.3.body':
       'Udział w Meta Global AI Developer Hackathon 2026 — praca z agentami AI nad przypadkiem weryfikacji pomiarów.',
@@ -129,7 +131,7 @@
     'toolbox.domain.2.meta': 'Pliki projektowe, plotowanie, pulpity wirtualne',
     'toolbox.domain.3': 'Geodezja i nawigacja',
     'toolbox.domain.3.meta': 'MSc Nawigacja · BSc Geodezja i kartografia',
-    'toolbox.domain.4': 'Dane przestrzenne',
+    'toolbox.domain.4': 'ARINC 424 i dane przestrzenne',
     'toolbox.domain.4.meta': 'Konwersja formatów i obsługa współrzędnych',
     'toolbox.tools.label': 'Narzędzia',
     'toolbox.tools.1': 'MicroStation · AutoCAD',
@@ -160,7 +162,10 @@
     'toolbox.training.3.meta': 'ATC Autodesk · 2012',
     'toolbox.training.4': 'Certificate in Advanced English, ocena A',
     'toolbox.training.4.meta': 'Cambridge · 2009',
-    'flow.label': 'Kursy, hobby i inne konteksty',
+    'courses.title': 'Kursy',
+    'courses.intro': 'Krótkie formaty i samokształcenie, które ukształtowały mój sposób pracy.',
+    'hobbies.title': 'Hobby',
+    'hobbies.text': 'Science fiction, druk 3D, fotografia podróżnicza, gry strategiczne, stare filmy klasy B.',
     'flow.1.title': 'Data Scientist with Python',
     'flow.1.meta': 'DataCamp',
     'flow.2.title': 'Data Analyst with Python',
@@ -183,7 +188,6 @@
     'flow.10.meta': 'Jeppesen',
     'flow.11.title': 'Inteligencja emocjonalna i NLP',
     'flow.11.meta': 'Net Akademia',
-    'flow.interests': 'Zainteresowania: science fiction, druk 3D, fotografia podróżnicza, gry strategiczne, stare filmy klasy B.',
     'wip.text': 'Prace w toku — strona i CV są jeszcze finalizowane.',
     'contact.title': 'Kontakt',
     'contact.intro': 'Najszybciej odpowiadam na e-mail.',
@@ -320,7 +324,6 @@
   marqueeButton = document.getElementById('marquee-toggle');
   if (marqueeEl && marqueeButton) {
     const track = marqueeEl.querySelector('.marquee__track');
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const SPEED = 58;
 
     let offset = 0;
@@ -419,7 +422,7 @@
     });
 
     const storedMarquee = readStored(STORE.marquee);
-    setMarqueePlaying(storedMarquee ? storedMarquee === 'on' : !reduceMotion.matches, false);
+    setMarqueePlaying(storedMarquee ? storedMarquee === 'on' : true, false);
     marqueeButton.addEventListener('click', () => setMarqueePlaying(!marqueePlaying));
   }
 

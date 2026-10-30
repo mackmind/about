@@ -196,9 +196,17 @@ a {
 }
 
 .interests {
-  margin: 0.9rem 0 0;
-  font-size: 0.84rem;
+  margin: 0;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
+  font-size: 1.02rem;
   color: var(--muted);
+}
+
+.section__head--row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .header-row {
@@ -556,27 +564,6 @@ a {
   margin-top: 2rem;
 }
 
-.group-label {
-  margin: 2rem 0 0.75rem;
-  font-size: 0.82rem;
-  font-weight: 620;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.group-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin: 2rem 0 0.75rem;
-}
-
-.group-head .group-label {
-  margin: 0;
-}
-
 .marquee__toggle {
   padding: 0.32rem 0.7rem;
   font: 600 0.72rem / 1 var(--font);
@@ -601,10 +588,11 @@ a {
 }
 
 .table {
-  background: var(--surface);
+  background: color-mix(in oklab, var(--surface) 58%, transparent);
   border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 
 .table__head {
@@ -615,7 +603,7 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
-  background: var(--surface-2);
+  background: color-mix(in oklab, var(--surface-2) 62%, transparent);
   border-bottom: 1px solid var(--line);
 }
 

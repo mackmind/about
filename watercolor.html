@@ -54,9 +54,11 @@
 
     <nav class="nav" aria-label="Primary" data-i18n-aria="nav.label">
       <a href="#strengths" data-i18n="nav.strengths">Strengths</a>
-      <a href="#work" data-i18n="nav.work">Work</a>
       <a href="#experience" data-i18n="nav.experience">Experience</a>
       <a href="#toolbox" data-i18n="nav.toolbox">Toolbox</a>
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#courses" data-i18n="nav.courses">Courses</a>
+      <a href="#hobbies" data-i18n="nav.hobbies">Hobbies</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
@@ -138,59 +140,6 @@
         <p class="card__meta" data-i18n="strength.3.meta">Knowledge base · self-service · onboarding</p>
       </article>
     </div>
-  </section>
-
-  <section class="section wrap" id="work" aria-labelledby="work-title">
-    <header class="section__head">
-      <h2 id="work-title" data-i18n="work.title">Selected work</h2>
-      <p data-i18n="work.intro">One production tool I maintain, and two things outside work.</p>
-    </header>
-
-    <article class="project">
-      <div class="project__head">
-        <h3 data-i18n="work.1.title">Charting drive-mapping utility</h3>
-        <p class="project__role" data-i18n="work.1.role">Production utility · maintenance, support SME</p>
-      </div>
-      <div class="project__body">
-        <p data-i18n="work.1.body">
-          A mapping helper used by chart-production staff across offices and virtual desktops.
-          I maintain it end to end: standard and safe-mode variants, office and hemisphere
-          selection, and the guidance users follow when a required drive is missing.
-        </p>
-        <ul class="plain">
-          <li data-i18n="work.1.b1">Versioned maintenance with source-level history, plus release and rollback planning</li>
-          <li data-i18n="work.1.b2">Support guides and knowledge articles kept in step with each release</li>
-          <li data-i18n="work.1.b3">Diagnostics that separate tool faults from access, service and group-membership issues</li>
-        </ul>
-        <p class="tags"><span>Windows scripting</span><span>MicroStation</span><span>Production support</span><span>Documentation</span></p>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project__head">
-        <h3>PicCompare</h3>
-        <p class="project__role" data-i18n="work.2.role">Independent desktop tool · personal</p>
-      </div>
-      <div class="project__body">
-        <p data-i18n="work.2.body">
-          A personal desktop utility I maintain in my own time. Details stay private, so this
-          page only notes that it exists.
-        </p>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project__head">
-        <h3>Meta Global AI Developer Hackathon</h3>
-        <p class="project__role" data-i18n="work.3.role">Indie Developer track · 2026</p>
-      </div>
-      <div class="project__body">
-        <p data-i18n="work.3.body">
-          Taking part in the 2026 Meta Global AI Developer Hackathon, working with AI coding
-          agents on a measurement-verification use case.
-        </p>
-      </div>
-    </article>
   </section>
 
   <section class="section wrap" id="experience" aria-labelledby="experience-title">
@@ -286,7 +235,7 @@
             <span class="table__note" data-i18n="toolbox.domain.3.meta">MSc Navigation · BSc Geodesy and Cartography</span>
           </li>
           <li>
-            <span class="table__term" data-i18n="toolbox.domain.4">Spatial data</span>
+            <span class="table__term" data-i18n="toolbox.domain.4">ARINC 424 and spatial data</span>
             <span class="table__note" data-i18n="toolbox.domain.4.meta">Format conversion and coordinate handling</span>
           </li>
         </ul>
@@ -362,12 +311,71 @@
         </ul>
       </section>
     </div>
+  </section>
 
-    <div class="group-head">
-      <h3 class="group-label" data-i18n="flow.label">Courses, hobbies and other context</h3>
+  <section class="section wrap" id="work" aria-labelledby="work-title">
+    <header class="section__head">
+      <h2 id="work-title" data-i18n="work.title">Selected work</h2>
+      <p data-i18n="work.intro">A broad generalist — far from fullstack developer — yet not allergic to code.</p>
+    </header>
+
+    <article class="project">
+      <div class="project__head">
+        <h3>Meta Global AI Developer Hackathon</h3>
+        <p class="project__role" data-i18n="work.3.role">Indie Developer track · 2026</p>
+      </div>
+      <div class="project__body">
+        <p data-i18n="work.3.body">
+          Taking part in the 2026 Meta Global AI Developer Hackathon, working with AI coding
+          agents on a measurement-verification use case.
+        </p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <h3>PicCompare</h3>
+        <p class="project__role" data-i18n="work.2.role">Independent desktop tool · personal</p>
+      </div>
+      <div class="project__body">
+        <p data-i18n="work.2.body">
+          In progress: a desktop utility for visual document comparisons, friendly to both
+          human and agentic users.
+        </p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <h3 data-i18n="work.1.title">Charting drive-mapping utility</h3>
+        <p class="project__role" data-i18n="work.1.role">Production utility · maintenance, support SME</p>
+      </div>
+      <div class="project__body">
+        <p data-i18n="work.1.body">
+          A mapping helper used by chart-production staff across offices and virtual desktops.
+          I maintain it end to end: standard and safe-mode variants, office and hemisphere
+          selection, and the guidance users follow when a required drive is missing.
+        </p>
+        <ul class="plain">
+          <li data-i18n="work.1.b1">Versioned maintenance with source-level history, plus release and rollback planning</li>
+          <li data-i18n="work.1.b2">Support guides and knowledge articles kept in step with each release</li>
+          <li data-i18n="work.1.b3">Diagnostics that separate tool faults from access, service and group-membership issues</li>
+        </ul>
+        <p class="tags"><span>Windows scripting</span><span>MicroStation</span><span>Production support</span><span>Documentation</span></p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section wrap" id="courses" aria-labelledby="courses-title">
+    <header class="section__head section__head--row">
+      <div>
+        <h2 id="courses-title" data-i18n="courses.title">Courses</h2>
+        <p data-i18n="courses.intro">Short formats and self-study that shaped how I work.</p>
+      </div>
       <button class="marquee__toggle" id="marquee-toggle" type="button" aria-pressed="false">Play</button>
-    </div>
-    <div class="marquee" role="group" aria-label="Courses, hobbies and other context" data-i18n-aria="flow.label">
+    </header>
+
+    <div class="marquee" role="group" aria-label="Courses" data-i18n-aria="courses.title">
       <ul class="marquee__track">
         <li>
           <span class="marquee__title" data-i18n="flow.1.title">Data Scientist with Python</span>
@@ -415,8 +423,13 @@
         </li>
       </ul>
     </div>
+  </section>
 
-    <p class="interests" data-i18n="flow.interests">Interests: science fiction, 3D printing, travel photography, strategy games, old B-movies.</p>
+  <section class="section wrap" id="hobbies" aria-labelledby="hobbies-title">
+    <header class="section__head">
+      <h2 id="hobbies-title" data-i18n="hobbies.title">Hobbies</h2>
+    </header>
+    <p class="interests" data-i18n="hobbies.text">Science fiction, 3D printing, travel photography, strategy games, old B-movies.</p>
   </section>
 
   <section class="section wrap" id="contact" aria-labelledby="contact-title">
