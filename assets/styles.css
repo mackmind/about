@@ -395,11 +395,11 @@ a {
   box-shadow: 0 0 0 1px var(--line);
 }
 
-html[lang="en"] .ctrl--flag .flag--pl {
+html[lang="en"] .ctrl--flag .flag--en {
   display: block;
 }
 
-html[lang="pl"] .ctrl--flag .flag--en {
+html[lang="pl"] .ctrl--flag .flag--pl {
   display: block;
 }
 
