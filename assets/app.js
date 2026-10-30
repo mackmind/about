@@ -136,8 +136,9 @@
     'toolbox.domain.2': 'Proces produkcji map',
     'toolbox.domain.2.meta': 'Pliki projektowe, plotowanie, pulpity wirtualne',
     'toolbox.domain.3': 'Geodezja i nawigacja',
-    'toolbox.domain.3.meta': 'MSc Nawigacja · BSc Geodezja i kartografia',
-    'toolbox.domain.4': 'ARINC 424 i dane przestrzenne',
+    'toolbox.domain.3.meta': 'MSc Nawigacja',
+    'toolbox.domain.3.meta2': 'BSc Geodezja i kartografia',
+    'toolbox.domain.4': 'ARINC424 i dane przestrzenne',
     'toolbox.domain.4.meta': 'Konwersja formatów i obsługa współrzędnych',
     'toolbox.tools.label': 'Narzędzia',
     'toolbox.tools.1': 'MicroStation · AutoCAD',
@@ -152,7 +153,7 @@
     'toolbox.tools.5.meta': 'Dokumentacja i raportowanie',
     'toolbox.ai.label': 'AI i automatyzacja',
     'toolbox.ai.1': 'Agenci AI w codziennej pracy',
-    'toolbox.ai.1.meta': 'Codex, Claude Code, Qoder, DSH, Hermes, Omniroute',
+    'toolbox.ai.1.meta': 'Codex, Claude Code, Qoder, Command Code, DSH, Hermes, Omniroute',
     'toolbox.ai.2': 'Modernizacja istniejących automatyzacji',
     'toolbox.ai.2.meta': 'Mapowanie dysków, launchery, makra, polecenia użytkownika',
     'toolbox.ai.3': 'Skrypty i utrzymanie',
@@ -170,6 +171,8 @@
     'toolbox.training.4.meta': 'Cambridge · 2009',
     'courses.title': 'Kursy',
     'courses.intro': 'Krótkie formaty i samokształcenie, które ukształtowały mój sposób pracy.',
+    'courses.fun': 'Częściej niż nie, nauka jest dla mnie zabawą.',
+    'courses.recreational': 'Kursy rekreacyjne',
     'hobbies.title': 'Hobby',
     'hobbies.text': 'Science fiction, druk 3D, fotografia podróżnicza, gry strategiczne, stare filmy klasy B.',
     'flow.1.title': 'Data Scientist with Python',
@@ -178,20 +181,20 @@
     'flow.2.meta': 'DataCamp',
     'flow.3.title': 'Python Programmer',
     'flow.3.meta': 'DataCamp',
-    'flow.4.title': 'Wprowadzenie do komunikacji satelitarnej',
-    'flow.4.meta': 'Coursera · Institut Mines-Télécom',
-    'flow.5.title': 'Badania Układu Słonecznego',
-    'flow.5.meta': 'Coursera · Caltech',
-    'flow.6.title': 'Myślenie modelowe',
-    'flow.6.meta': 'Coursera · University of Michigan',
+    'flow.4.title': 'Myślenie modelowe',
+    'flow.4.meta': 'Coursera · University of Michigan',
+    'flow.5.title': '101 Awiacji',
+    'flow.5.meta': 'Canvas.net · Embry-Riddle Aeronautical University',
+    'flow.6.title': 'Crucial Conversations',
+    'flow.6.meta': 'Jeppesen',
     'flow.7.title': 'Teoria gier',
     'flow.7.meta': 'Coursera · Stanford, UBC, Tokio',
     'flow.8.title': 'Grywalizacja',
     'flow.8.meta': 'Coursera · Wharton',
-    'flow.9.title': '101 Awiacji',
-    'flow.9.meta': 'Canvas.net · Embry-Riddle Aeronautical University',
-    'flow.10.title': 'Crucial Conversations',
-    'flow.10.meta': 'Jeppesen',
+    'flow.9.title': 'Wprowadzenie do komunikacji satelitarnej',
+    'flow.9.meta': 'Coursera · Institut Mines-Télécom',
+    'flow.10.title': 'Badania Układu Słonecznego',
+    'flow.10.meta': 'Coursera · Caltech',
     'flow.11.title': 'Inteligencja emocjonalna (EQ)',
     'flow.11.meta': 'Net Akademia',
     'flow.12.title': 'NLP — programowanie neurolingwistyczne',
@@ -320,50 +323,57 @@
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 
-  document.querySelectorAll('.marquee').forEach((marquee) => {
-    const track = marquee.querySelector('.marquee__track');
-    if (!track) return;
-    Array.from(track.children).forEach((item) => {
-      const copy = item.cloneNode(true);
+  const marqueeList = Array.from(document.querySelectorAll('.marquee'))
+    .map((el) => ({
+      el,
+      track: el.querySelector('.marquee__track'),
+      half: 0,
+      offset: 0,
+      dragging: false,
+      startX: 0,
+      startOffset: 0
+    }))
+    .filter((item) => item.track);
+
+  marqueeList.forEach((item) => {
+    Array.from(item.track.children).forEach((child) => {
+      const copy = child.cloneNode(true);
       copy.setAttribute('aria-hidden', 'true');
-      track.appendChild(copy);
+      item.track.appendChild(copy);
     });
   });
 
-  const marqueeEl = document.querySelector('.marquee');
   marqueeButton = document.getElementById('marquee-toggle');
-  if (marqueeEl && marqueeButton) {
-    const track = marqueeEl.querySelector('.marquee__track');
+  if (marqueeList.length && marqueeButton) {
     const SPEED = 58;
-
-    let offset = 0;
-    let half = 0;
     let frame = 0;
     let last = 0;
-    let dragging = false;
-    let dragStartX = 0;
-    let dragStartOffset = 0;
 
     const measure = () => {
-      half = track.scrollWidth / 2;
+      marqueeList.forEach((item) => {
+        item.half = item.track.scrollWidth / 2;
+      });
     };
 
-    const wrap = () => {
-      if (half > 0) offset = ((offset % half) + half) % half;
+    const draw = (item) => {
+      item.track.style.transform = `translate3d(${-item.offset}px, 0, 0)`;
     };
 
-    const apply = () => {
-      track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+    const wrap = (item) => {
+      if (item.half > 0) item.offset = ((item.offset % item.half) + item.half) % item.half;
     };
 
     const tick = (time) => {
-      if (!marqueePlaying || dragging) return;
+      if (!marqueePlaying) return;
       if (!last) last = time;
       const delta = Math.min((time - last) / 1000, 0.05);
       last = time;
-      offset += SPEED * delta;
-      wrap();
-      apply();
+      marqueeList.forEach((item) => {
+        if (item.dragging) return;
+        item.offset += SPEED * delta;
+        wrap(item);
+        draw(item);
+      });
       frame = requestAnimationFrame(tick);
     };
 
@@ -380,15 +390,19 @@
 
     const setMarqueePlaying = (playing, persist = true) => {
       marqueePlaying = playing;
-      marqueeEl.classList.toggle('marquee--playing', playing);
+      marqueeList.forEach((item) => {
+        item.el.classList.toggle('marquee--playing', playing);
+        if (!playing) {
+          item.offset = 0;
+          draw(item);
+        }
+      });
       updateMarqueeLabel();
       if (playing) {
         measure();
         startLoop();
       } else {
         stopLoop();
-        offset = 0;
-        apply();
       }
       if (!persist) return;
       try {
@@ -398,33 +412,33 @@
       }
     };
 
-    marqueeEl.addEventListener('pointerdown', (event) => {
-      if (!marqueePlaying) return;
-      dragging = true;
-      dragStartX = event.clientX;
-      dragStartOffset = offset;
-      stopLoop();
-      marqueeEl.setPointerCapture(event.pointerId);
+    marqueeList.forEach((item) => {
+      item.el.addEventListener('pointerdown', (event) => {
+        if (!marqueePlaying) return;
+        item.dragging = true;
+        item.startX = event.clientX;
+        item.startOffset = item.offset;
+        item.el.setPointerCapture(event.pointerId);
+      });
+
+      item.el.addEventListener('pointermove', (event) => {
+        if (!item.dragging) return;
+        item.offset = item.startOffset - (event.clientX - item.startX);
+        wrap(item);
+        draw(item);
+      });
+
+      const endDrag = (event) => {
+        if (!item.dragging) return;
+        item.dragging = false;
+        if (item.el.hasPointerCapture(event.pointerId)) {
+          item.el.releasePointerCapture(event.pointerId);
+        }
+      };
+
+      item.el.addEventListener('pointerup', endDrag);
+      item.el.addEventListener('pointercancel', endDrag);
     });
-
-    marqueeEl.addEventListener('pointermove', (event) => {
-      if (!dragging) return;
-      offset = dragStartOffset - (event.clientX - dragStartX);
-      wrap();
-      apply();
-    });
-
-    const endDrag = (event) => {
-      if (!dragging) return;
-      dragging = false;
-      if (marqueeEl.hasPointerCapture(event.pointerId)) {
-        marqueeEl.releasePointerCapture(event.pointerId);
-      }
-      if (marqueePlaying) startLoop();
-    };
-
-    marqueeEl.addEventListener('pointerup', endDrag);
-    marqueeEl.addEventListener('pointercancel', endDrag);
 
     window.addEventListener('resize', () => {
       measure();

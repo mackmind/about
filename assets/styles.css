@@ -196,11 +196,17 @@ a {
 }
 
 .interests {
-  max-width: 56ch;
+  max-width: none;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
   font-size: 1.02rem;
   color: var(--muted);
+}
+
+@media (min-width: 54rem) {
+  .interests {
+    white-space: nowrap;
+  }
 }
 
 .section__head--row {
@@ -208,6 +214,31 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.head-inline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+}
+
+.head-inline h2 {
+  margin: 0;
+}
+
+.fun-line {
+  margin: 1.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+#edu-label + ul li span:first-child {
+  font-weight: 620;
+}
+
+#pub-label + ul li span:first-child {
+  font-style: italic;
 }
 
 .header-row {
@@ -365,25 +396,25 @@ a {
 
 .btn--c1 {
   color: #fff;
-  background: #0b2a4a;
+  background: #175a94;
   border-color: transparent;
 }
 
 .btn--c2 {
   color: #fff;
-  background: #123f6d;
+  background: #1d6ba8;
   border-color: transparent;
 }
 
 .btn--c3 {
   color: #fff;
-  background: #1a5a8a;
+  background: #237cbb;
   border-color: transparent;
 }
 
 .btn--c4 {
   color: #fff;
-  background: #2472a4;
+  background: #2a8dcd;
   border-color: transparent;
 }
 
@@ -427,7 +458,7 @@ a {
 
 .card {
   padding: 1.25rem 1.3rem;
-  background: color-mix(in oklab, var(--surface) 78%, transparent);
+  background: color-mix(in oklab, var(--surface) 68%, transparent);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   container-type: inline-size;
@@ -701,10 +732,11 @@ a {
   max-width: 23rem;
   margin-right: 0.6rem;
   padding: 0.6rem 0.85rem;
-  background: var(--surface);
+  background: color-mix(in oklab, var(--surface) 72%, transparent);
   border: 1px solid var(--line);
   border-radius: 10px;
   user-select: none;
+  backdrop-filter: blur(6px);
 }
 
 .marquee__title {
