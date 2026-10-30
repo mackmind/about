@@ -270,12 +270,27 @@ a {
   font-style: italic;
 }
 
-#edu-label + ul li span:first-child {
+#edu-label + ul li > span:first-child {
   font-weight: 620;
 }
 
-#pub-label + ul li span:first-child {
+#pub-label + ul li > span:first-child {
   font-style: italic;
+}
+
+.subgrid li .meta-line {
+  display: block;
+}
+
+.subgrid li .meta-line span,
+.subgrid li .meta-line a {
+  display: inline;
+}
+
+.subgrid li .meta-line a {
+  color: color-mix(in oklab, var(--accent) 78%, var(--text));
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .header-row {
@@ -495,7 +510,7 @@ a {
 
 .card {
   padding: 1.25rem 1.3rem;
-  background: color-mix(in oklab, var(--surface) 68%, transparent);
+  background: color-mix(in oklab, var(--surface) 56%, transparent);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   container-type: inline-size;
@@ -708,7 +723,7 @@ a {
 }
 
 .table {
-  background: color-mix(in oklab, var(--surface) 45%, transparent);
+  background: color-mix(in oklab, var(--surface) 36%, transparent);
   border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
@@ -723,7 +738,7 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
-  background: color-mix(in oklab, var(--surface-2) 52%, transparent);
+  background: color-mix(in oklab, var(--surface-2) 42%, transparent);
   border-bottom: 1px solid var(--line);
 }
 
@@ -788,11 +803,41 @@ a {
   max-width: 23rem;
   margin-right: 0.6rem;
   padding: 0.6rem 0.85rem;
-  background: color-mix(in oklab, var(--surface) 72%, transparent);
+  background: color-mix(in oklab, var(--surface) 60%, transparent);
   border: 1px solid var(--line);
   border-radius: 10px;
   user-select: none;
   backdrop-filter: blur(6px);
+}
+
+:root[data-theme="dark"] .marquee__track li {
+  background: color-mix(in oklab, #343a40 74%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] .marquee__track li {
+    background: color-mix(in oklab, #343a40 74%, transparent);
+  }
+}
+
+:root[data-theme="dark"] .card {
+  background: color-mix(in oklab, #2b3036 58%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] .card {
+    background: color-mix(in oklab, #2b3036 58%, transparent);
+  }
+}
+
+:root[data-theme="dark"] .table {
+  background: color-mix(in oklab, #2b3036 46%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] .table {
+    background: color-mix(in oklab, #2b3036 46%, transparent);
+  }
 }
 
 .marquee__title {

@@ -131,6 +131,8 @@
     'pub.label': 'Prace dyplomowe',
     'pub.1': 'Koncepcja modelu doskonalenia zarządzania multiprocesem gwarancyjnym pod względem zgodności formalnej i technicznej w sektorze motoryzacyjnym',
     'pub.1.meta': 'Praca dyplomowa, z Piotrem Sliżem i Piotrem Czubkiem · 2018',
+    'pub.1.link': 'dashboard do analizy danych',
+    'pub.1.note': '(napisz do mnie po hasło)',
     'pub.2': 'Projekt usprawnienia pracy działu przetwarzania informacji w przedsiębiorstwie branży geodezyjnej',
     'pub.2.meta': 'Praca inżynierska · 2016',
     'pub.3': 'Ocena dokładności pozycji rozwiązań fazowych GPS i GPS/GLONASS z wykorzystaniem aktywnych sieci geodezyjnych w precyzyjnej nawigacji',
