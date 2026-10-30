@@ -110,26 +110,63 @@ body {
   pointer-events: none;
 }
 
-.bg__panorama {
+.bg__layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 260vh;
-  opacity: 0.45;
-  transform: translateY(calc(var(--pan, 0) * -160vh));
   will-change: transform;
 }
 
-:root[data-theme="dark"] .bg__panorama {
+.bg__far {
+  height: 240vh;
+  opacity: 0.4;
+  transform: translateY(calc(var(--pan, 0) * -140vh));
+}
+
+.bg__mid {
+  height: 330vh;
+  opacity: 0.52;
+  transform: translateY(calc(var(--pan, 0) * -230vh));
+}
+
+.bg__near {
+  height: 430vh;
+  opacity: 0.62;
+  transform: translateY(calc(var(--pan, 0) * -330vh));
+}
+
+:root[data-theme="dark"] .bg__layer {
   filter: invert(1) sepia(0.22) saturate(0.85);
-  opacity: 0.42;
+}
+
+:root[data-theme="dark"] .bg__far {
+  opacity: 0.34;
+}
+
+:root[data-theme="dark"] .bg__mid {
+  opacity: 0.46;
+}
+
+:root[data-theme="dark"] .bg__near {
+  opacity: 0.56;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root[data-theme="auto"] .bg__panorama {
+  :root[data-theme="auto"] .bg__layer {
     filter: invert(1) sepia(0.22) saturate(0.85);
-    opacity: 0.42;
+  }
+
+  :root[data-theme="auto"] .bg__far {
+    opacity: 0.34;
+  }
+
+  :root[data-theme="auto"] .bg__mid {
+    opacity: 0.46;
+  }
+
+  :root[data-theme="auto"] .bg__near {
+    opacity: 0.56;
   }
 }
 
@@ -619,6 +656,25 @@ a {
   max-width: 74ch;
 }
 
+.li-label {
+  color: color-mix(in oklab, var(--accent) 72%, var(--text));
+  font-weight: 560;
+}
+
+.timeline p.single-line {
+  max-width: none;
+}
+
+@media (min-width: 54rem) {
+  .timeline p.single-line {
+    white-space: nowrap;
+  }
+}
+
+.tables + .subgrid {
+  margin-top: 2.5rem;
+}
+
 .subgrid {
   display: grid;
   gap: 2rem;
@@ -810,6 +866,15 @@ a {
 
 #contact {
   padding-bottom: clamp(14rem, 30vh, 22rem);
+}
+
+#courses,
+#hobbies {
+  padding-block: clamp(1.75rem, 3.5vw, 2.75rem);
+}
+
+#contact {
+  padding-top: clamp(1.75rem, 3.5vw, 2.75rem);
 }
 
 .contact-list {

@@ -19,8 +19,14 @@ html[data-variant="wc"]:root .bg::after {
 }
 
 html[data-variant="wc"]:root .bg__panorama {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300vh;
   opacity: 1;
   filter: none !important;
+  transform: translateY(calc(var(--pan, 0) * -200vh));
 }
 
 html[data-variant="wc"]:root .site-header {
