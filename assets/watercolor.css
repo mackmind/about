@@ -1,0 +1,52 @@
+html[data-variant="wc"]:root {
+  color-scheme: light;
+  --bg: #f7f2e8;
+  --surface: #fdfaf3;
+  --surface-2: #f3ecdf;
+  --text: #2f2a24;
+  --muted: #6b6257;
+  --line: #e0d6c4;
+  --accent: #8a5a44;
+  --accent-ink: #ffffff;
+}
+
+html[data-variant="wc"]:root .bg {
+  background: #f7f2e8 !important;
+}
+
+html[data-variant="wc"]:root .bg::after {
+  opacity: 0.4;
+}
+
+html[data-variant="wc"]:root .bg__panorama {
+  opacity: 1;
+  filter: none !important;
+}
+
+html[data-variant="wc"]:root .site-header {
+  background: color-mix(in oklab, #f7f2e8 86%, transparent);
+}
+
+html[data-variant="wc"]:root #theme-toggle {
+  display: none;
+}
+
+html[data-variant="wc"]:root .bloom {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(46px);
+  background:
+    radial-gradient(34rem 22rem at 78% 14%, rgba(226, 168, 118, 0.22), transparent 70%),
+    radial-gradient(28rem 20rem at 16% 72%, rgba(150, 178, 200, 0.18), transparent 70%);
+}
+
+html[data-variant="wc"]:root .btn--primary {
+  background: #8a5a44;
+}
+
+html[data-variant="wc"]:root .card,
+html[data-variant="wc"]:root .project {
+  border-color: #e0d6c4;
+}
