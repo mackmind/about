@@ -212,7 +212,7 @@
     'flow.12.meta': 'Net Akademia',
     'flow.13.title': 'Szybkie czytanie i szybka nauka',
     'flow.13.meta': 'MG Centrum',
-    'wip.text': 'Prace w toku! Nieustannie rozwijam swój profil. Ta strona nie ma zaplanowanego etapu końcowego.',
+    'wip.text': 'Prace w toku! Podnoszę poziom swojego profilu bez ustanku. Nie ma w planach stanu końcowego dla tej strony.',
     'contact.title': 'Kontakt',
     'contact.intro': 'Najszybciej odpowiadam na e-mail.',
     'contact.email': 'E-mail',
