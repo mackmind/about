@@ -27,7 +27,7 @@
     <path d="M55 -14l0 28M75 -14l0 28M95 -14l0 28" opacity=".45"/>
     <path d="M-17 23l-1 11M17 23l1 11" stroke-width="1.4"/>
   </g>
-<g transform="translate(360 580) scale(0.7) rotate(16)">
+<g transform="translate(360 580) scale(0.7) rotate(45)">
     <rect x="-21" y="-13" width="42" height="26" rx="4" stroke-width="1.5"/>
     <path d="M-21 -2h42" opacity=".4"/>
     <circle cx="0" cy="-28" r="10" stroke-width="1.4"/>

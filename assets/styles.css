@@ -11,6 +11,8 @@
   --sky-a: #eef1f8;
   --sky-b: #dfe5f3;
   --sky-angle: 180deg;
+  --surface: #ffffff;
+  --text-glow: 0 0 18px rgba(251, 251, 250, 0.92), 0 0 6px rgba(251, 251, 250, 0.72);
   --radius: 14px;
   --wrap: 68rem;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -34,6 +36,7 @@
   --accent-ink: #0e1014;
   --sky-a: #06080e;
   --sky-b: #0a0f1c;
+  --text-glow: 0 0 18px rgba(6, 8, 14, 0.9), 0 0 6px rgba(6, 8, 14, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +52,7 @@
     --accent-ink: #0e1014;
     --sky-a: #06080e;
     --sky-b: #0a0f1c;
+    --text-glow: 0 0 18px rgba(6, 8, 14, 0.9), 0 0 6px rgba(6, 8, 14, 0.7);
   }
 }
 
@@ -186,6 +190,12 @@ body {
 
 a {
   color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: var(--text-glow);
 }
 
 .wrap {
