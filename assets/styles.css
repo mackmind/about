@@ -263,11 +263,10 @@ h3 {
 }
 
 .wip__tape span {
-  padding: 0.1rem 0.45rem;
-  font-size: 0.6rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.66rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--tape-ink);
   background: var(--tape-chip);
   border-radius: 2px;
