@@ -130,6 +130,12 @@ body {
   transform: translateY(calc(var(--pan, 0) * -230vh));
 }
 
+.bg__low {
+  height: 380vh;
+  opacity: 0.58;
+  transform: translateY(calc(var(--pan, 0) * -280vh));
+}
+
 .bg__near {
   height: 430vh;
   opacity: 0.62;
@@ -148,6 +154,10 @@ body {
   opacity: 0.46;
 }
 
+:root[data-theme="dark"] .bg__low {
+  opacity: 0.52;
+}
+
 :root[data-theme="dark"] .bg__near {
   opacity: 0.56;
 }
@@ -163,6 +173,10 @@ body {
 
   :root[data-theme="auto"] .bg__mid {
     opacity: 0.46;
+  }
+
+  :root[data-theme="auto"] .bg__low {
+    opacity: 0.52;
   }
 
   :root[data-theme="auto"] .bg__near {
