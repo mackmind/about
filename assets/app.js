@@ -212,7 +212,8 @@
     'flow.12.meta': 'Net Akademia',
     'flow.13.title': 'Szybkie czytanie i\u00A0szybka nauka',
     'flow.13.meta': 'MG Centrum',
-    'wip.text': 'Prace w\u00A0toku! Bezustannie podnoszę poziom swojego profilu. Nie ma w\u00A0planach stanu końcowego tej strony.',
+    'wip.text': 'PRACE W\u00A0TOKU! Bezustannie podnoszę poziom swojego profilu. Nie ma w\u00A0planach stanu końcowego tej strony.',
+    'wip.text.sr': 'Prace w\u00A0toku! Bezustannie podnoszę poziom swojego profilu. Nie ma w\u00A0planach stanu końcowego tej strony.',
     'contact.title': 'Kontakt',
     'contact.intro': 'Najszybciej odpowiadam na e\u2011mail.',
     'contact.email': 'E\u2011mail',
@@ -531,6 +532,35 @@
     return darkQuery.matches ? SKY.dark : SKY.light;
   }
 
+  const lightDots = Array.from(document.querySelectorAll('.lights__dot'));
+  const LIGHT_SOURCES = [
+    { height: 240, shift: 140, x: 300, y: 360 },
+    { height: 330, shift: 230, x: 1150, y: 240 },
+    { height: 330, shift: 230, x: 1720, y: 1770 },
+    { height: 380, shift: 280, x: 1700, y: 2400 }
+  ];
+
+  function renderLights(progress, isDark) {
+    root.dataset.dark = isDark ? 'true' : 'false';
+    if (!isDark || !lightDots.length) return;
+
+    const viewport = window.innerHeight;
+    const width = window.innerWidth;
+
+    LIGHT_SOURCES.forEach((source, index) => {
+      const dot = lightDots[index];
+      if (!dot) return;
+      const heightPx = (source.height / 100) * viewport;
+      const scale = heightPx / 3000;
+      const left = (width - 2400 * scale) / 2;
+      const x = left + source.x * scale;
+      const y = source.y * scale - progress * ((source.shift / 100) * viewport);
+      const visible = y > -180 && y < viewport + 180;
+      dot.style.transform = `translate3d(${x.toFixed(1)}px, ${y.toFixed(1)}px, 0)`;
+      dot.style.opacity = visible ? '1' : '0';
+    });
+  }
+
   function renderSky() {
     if (!bg) return;
 
@@ -551,6 +581,7 @@
     root.style.setProperty('--sky-angle', `${(180 - 18 * progress).toFixed(1)}deg`);
     root.style.setProperty('--pan', progress.toFixed(4));
     root.style.setProperty('--wip-lag', `${(Math.min(window.scrollY, 220) * 0.7).toFixed(1)}px`);
+    renderLights(progress, stops === SKY.dark);
   }
 
   if (bg) {

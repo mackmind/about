@@ -245,6 +245,37 @@ h3 {
   backdrop-filter: blur(14px) saturate(1.4);
 }
 
+.lights {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+}
+
+:root[data-dark="true"] .lights {
+  display: block;
+}
+
+.lights__dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  margin: -210px 0 0 -210px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 214, 150, 0.16) 0%,
+    rgba(255, 214, 150, 0.07) 38%,
+    rgba(255, 214, 150, 0) 72%
+  );
+  mix-blend-mode: screen;
+  opacity: 0;
+  will-change: transform;
+}
+
 .wip {
   overflow: hidden;
   border-block: 1px solid var(--line);
