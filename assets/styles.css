@@ -261,19 +261,47 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 420px;
-  height: 420px;
-  margin: -210px 0 0 -210px;
+  width: 380px;
+  height: 380px;
+  margin: -190px 0 0 -190px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 214, 150, 0.16) 0%,
-    rgba(255, 214, 150, 0.07) 38%,
-    rgba(255, 214, 150, 0) 72%
-  );
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.95) 0 1.4px,
+      color-mix(in srgb, var(--light) 85%, white) 1.4px 3px,
+      transparent 9px
+    ),
+    radial-gradient(
+      circle,
+      color-mix(in srgb, var(--light) 42%, transparent) 0 5px,
+      transparent 44px
+    ),
+    radial-gradient(
+      circle,
+      color-mix(in srgb, var(--light) 8%, transparent) 0%,
+      color-mix(in srgb, var(--light) 3.5%, transparent) 42%,
+      transparent 72%
+    );
   mix-blend-mode: screen;
   opacity: 0;
   will-change: transform;
+}
+
+.lights__dot:nth-child(1) {
+  --light: #8fb6ff;
+}
+
+.lights__dot:nth-child(2) {
+  --light: #4f7dff;
+}
+
+.lights__dot:nth-child(3) {
+  --light: #7fd4ff;
+}
+
+.lights__dot:nth-child(4) {
+  --light: #a9c9ff;
 }
 
 .wip {
