@@ -17,6 +17,7 @@
   --tape-gap: #8b8070;
   --tape-chip: #5f574a;
   --tape-ink: #f4ead2;
+  --heading-soft: #8f95a3;
   --radius: 14px;
   --wrap: 68rem;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -45,6 +46,7 @@
   --tape-gap: #242424;
   --tape-chip: #242424;
   --tape-ink: #d8c48f;
+  --heading-soft: #c2c8d5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -65,6 +67,7 @@
     --tape-gap: #242424;
     --tape-chip: #242424;
     --tape-ink: #d8c48f;
+    --heading-soft: #c2c8d5;
   }
 }
 
@@ -261,31 +264,62 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 380px;
-  height: 380px;
-  margin: -190px 0 0 -190px;
+  width: 460px;
+  height: 460px;
+  margin: -230px 0 0 -230px;
+  visibility: hidden;
+  will-change: transform;
+}
+
+.lights__glow {
+  position: absolute;
+  inset: 0;
   border-radius: 50%;
+  opacity: 0;
   background:
     radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.55) 0 0.7px,
-      color-mix(in srgb, var(--light) 55%, white) 0.7px 1.6px,
-      transparent 4px
+      rgba(255, 255, 255, 0.6) 0 0.8px,
+      color-mix(in srgb, var(--light) 55%, white) 0.8px 1.8px,
+      transparent 5px
     ),
     radial-gradient(
       circle,
-      color-mix(in srgb, var(--light) 38%, transparent) 0 4px,
-      transparent 70px
+      color-mix(in srgb, var(--light) 46%, transparent) 0 5px,
+      color-mix(in srgb, var(--light) 10%, transparent) 26px,
+      transparent 120px
     ),
     radial-gradient(
       circle,
-      color-mix(in srgb, var(--light) 3%, transparent) 0%,
-      color-mix(in srgb, var(--light) 1%, transparent) 40%,
-      transparent 62%
+      color-mix(in srgb, var(--light) 1.2%, transparent) 0%,
+      color-mix(in srgb, var(--light) 0.4%, transparent) 40%,
+      transparent 55%
     );
   mix-blend-mode: color-dodge;
-  opacity: 0;
-  will-change: transform;
+}
+
+.lights__dot:nth-child(3) .lights__glow {
+  animation: droneBlink 13s ease-in-out infinite;
+}
+
+@keyframes droneBlink {
+  0%,
+  84% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0.55;
+  }
+  88% {
+    opacity: 0.12;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  93%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .lights__dot:nth-child(1) {
@@ -1022,7 +1056,7 @@ html[lang="pl"] .ctrl--flag .flag--pl {
   font-weight: 620;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--heading-soft);
 }
 
 .subgrid ul {

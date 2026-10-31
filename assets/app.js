@@ -535,8 +535,8 @@
   const lightDots = Array.from(document.querySelectorAll('.lights__dot'));
   const LIGHT_SOURCES = [
     { height: 240, shift: 140, x: 300, y: 360, strength: 1 },
-    { height: 330, shift: 230, x: 1150, y: 240, strength: 0.8 },
-    { height: 330, shift: 230, x: 1720, y: 1770, strength: 0.35 },
+    { height: 330, shift: 230, x: 1150, y: 240, strength: 0.85 },
+    { height: 330, shift: 230, x: 1720, y: 1770, strength: 0.55, blink: true },
     { height: 380, shift: 280, x: 1700, y: 2400, strength: 0.7 }
   ];
 
@@ -557,7 +557,9 @@
       const y = source.y * scale - progress * ((source.shift / 100) * viewport);
       const visible = y > -180 && y < viewport + 180;
       dot.style.transform = `translate3d(${x.toFixed(1)}px, ${y.toFixed(1)}px, 0)`;
-      dot.style.opacity = visible ? String(source.strength) : '0';
+      dot.style.visibility = visible ? 'visible' : 'hidden';
+      const glow = dot.firstElementChild;
+      if (glow && !source.blink) glow.style.opacity = String(source.strength);
     });
   }
 
