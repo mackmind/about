@@ -182,7 +182,7 @@
     'toolbox.training.4.meta': 'Cambridge · 2009',
     'courses.title': 'Kursy',
     'courses.intro': 'Krótkie formaty i\u00A0samokształcenie, które ukształtowały mój sposób pracy.',
-    'courses.fun': 'Nauka najczęściej jest dla mnie zabawą.',
+    'courses.fun': 'Nauka bardzo często jest też dla mnie zabawą.',
     'courses.recreational': 'Kursy rekreacyjne',
     'hobbies.title': 'Hobby',
     'hobbies.text': 'Science fiction, druk 3D, fotografia podróżnicza, gry strategiczne, stare filmy klasy B.',
@@ -534,10 +534,10 @@
 
   const lightDots = Array.from(document.querySelectorAll('.lights__dot'));
   const LIGHT_SOURCES = [
-    { height: 240, shift: 140, x: 300, y: 360 },
-    { height: 330, shift: 230, x: 1150, y: 240 },
-    { height: 330, shift: 230, x: 1720, y: 1770 },
-    { height: 380, shift: 280, x: 1700, y: 2400 }
+    { height: 240, shift: 140, x: 300, y: 360, strength: 1 },
+    { height: 330, shift: 230, x: 1150, y: 240, strength: 0.8 },
+    { height: 330, shift: 230, x: 1720, y: 1770, strength: 0.35 },
+    { height: 380, shift: 280, x: 1700, y: 2400, strength: 0.7 }
   ];
 
   function renderLights(progress, isDark) {
@@ -557,7 +557,7 @@
       const y = source.y * scale - progress * ((source.shift / 100) * viewport);
       const visible = y > -180 && y < viewport + 180;
       dot.style.transform = `translate3d(${x.toFixed(1)}px, ${y.toFixed(1)}px, 0)`;
-      dot.style.opacity = visible ? '1' : '0';
+      dot.style.opacity = visible ? String(source.strength) : '0';
     });
   }
 

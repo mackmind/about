@@ -274,14 +274,14 @@ h3 {
     ),
     radial-gradient(
       circle,
-      color-mix(in srgb, var(--light) 30%, transparent) 0 3px,
-      transparent 34px
+      color-mix(in srgb, var(--light) 38%, transparent) 0 4px,
+      transparent 70px
     ),
     radial-gradient(
       circle,
-      color-mix(in srgb, var(--light) 10%, transparent) 0%,
-      color-mix(in srgb, var(--light) 4%, transparent) 38%,
-      transparent 70%
+      color-mix(in srgb, var(--light) 3%, transparent) 0%,
+      color-mix(in srgb, var(--light) 1%, transparent) 40%,
+      transparent 62%
     );
   mix-blend-mode: color-dodge;
   opacity: 0;
