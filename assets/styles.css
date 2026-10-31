@@ -213,6 +213,15 @@ h3 {
   text-shadow: var(--text-glow);
 }
 
+main {
+  text-shadow: var(--text-glow);
+}
+
+.btn,
+.marquee__toggle {
+  text-shadow: none;
+}
+
 .wrap {
   width: min(100% - 2.25rem, var(--wrap));
   margin-inline: auto;
