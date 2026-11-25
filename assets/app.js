@@ -62,7 +62,7 @@
     'hero.lead2':
       'W\u00A0złożonej rzeczywistości operacyjnej aeronautyki kompleksowo wspieram krytyczne narzędzia CAD: od\u00A0mapowania systemów i\u00A0setupu, przez\u00A0testy UAT, analizę przyczyn źródłowych zgłoszeń, przekładanie raportów na\u00A0wymagania dla\u00A0programistów, walidację rezultatów aż\u00A0po\u00A0planowanie i\u00A0wykonywanie wdrożeń. Metodyczność uzupełniam utrzymywaniem i\u00A0rozwijaniem automatyzacji przepływów danych oraz\u00A0tworzeniem elementów samopomocy: bazy wiedzy i\u00A0programów do\u00A0doraźnego rozwiązania problemów: w\u00A0powershellu, pythonie i\u00A0także batchu, od\u00A0pewnego czasu również z\u00A0biegłym wykorzystaniem AI.',
     'hero.note':
-      'Otwarty na\u00A0role Business, Systems, Geospatial i\u00A0Aeronautical Analyst oraz\u00A0Technical Operations w\u00A0branży nawigacyjnej i\u00A0logistycznej: lotniczej oraz\u00A0morskiej.',
+      'Otwarty na\u00A0role Business, Systems, Geospatial i\u00A0Aeronautical Analyst oraz\u00A0Technical Operations w\u00A0branży nawigacyjnej: lotniczej oraz\u00A0morskiej.',
     'hero.cv': 'Pobierz CV (PDF)',
     'hero.email': 'E\u2011mail',
     'strengths.title': 'Kluczowe kompetencje',
